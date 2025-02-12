@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forma</title>
+</head>
+<body>
+    <form action="#" method="post" class="forma" id="myForm">
+        <div class="title title-form">
+            Create pending message
+            <div class="description description-legend">
+                Enter the message and the number of seconds after which the message will be sent
+            </div>
+        </div>
+   
+        <label for="message">Message</label>
+        <textarea placeholder="Enter..."  cols="30" rows="7" id="message" class="message"  required></textarea>
+        <label for="second">Seconds:</label>
+        <input type="number"  placeholder="Enter..." id="second" min="0" class="second" required>
+        <button type="submit" id="btnSend" class="submit" >Send message</button>
+    
+    </form>
+
+    <div class="wrapper">
+        <table class="table" id="table">
+            <caption class="title title-table">
+                Pending messages
+                <div class="description description-caption">This box displays the pending messages created earlier</div>
+            </caption>
+            <tbody>
+                <tr class="caption">
+                    <th>Message</th>
+                    <th>Remains</th>
+                    <th>Status</th>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
